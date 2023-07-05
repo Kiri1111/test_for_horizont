@@ -1,17 +1,18 @@
 import React from 'react';
 import {NavLink} from "react-router-dom";
+import s from './links.module.scss'
 
 export const Links = () => {
 	return (
-		<div>
-			<NavLink to={'/tvs'}>
-				<div>tvs</div>
+		<div className={s.linksBlock}>
+			<NavLink className={s.link} to={'/tvs'}>
+				<div>Телевизоры</div>
 			</NavLink>
-			<NavLink to={'/microwaves'}>
-				<div>miCrO</div>
+			<NavLink className={s.link} to={'/microwaves'}>
+				<div>Печи</div>
 			</NavLink>
-			<NavLink to={'/'}>
-				<div>maIN</div>
+			<NavLink className={s.link} to={'/'}>
+				<div>Главная</div>
 			</NavLink>
 		</div>
 	)

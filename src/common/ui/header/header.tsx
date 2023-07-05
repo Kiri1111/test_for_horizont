@@ -1,11 +1,12 @@
 import React from 'react';
-import {Links} from "./links";
+import {BurgerNav} from "./burgerNav/burgerNav";
+import s from './header.module.scss'
 
 export const Header = () => {
 	return (
-		<div>
-			<div>HORIZONT R&D center</div>
-			<Links/>
+		<div className={s.headerBlock}>
+			<BurgerNav/>
+			<span>HORIZONT R&D center</span>
 		</div>
 	)
 }

@@ -1,0 +1,52 @@
+@import './src/common/styles/variables';
+
+
+.footerBlock {
+  display: flex;
+  text-align: center;
+  justify-content: end;
+  color: $textColor;
+  font-size: 15px;
+  background-color: rgba(60, 60, 60, 0.53);
+  width: 30%;
+  border-radius: 20px;
+
+  .footerContainer {
+
+
+    .contant {
+
+      .table {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: #726868;
+        @media screen and (max-width: 500px) {
+          justify-content: center;
+        }
+
+        .divTel {
+          padding: 5px;
+          border-radius: 10px;
+          background-color: lightgrey;
+          width: 20vh;
+          margin: 6px;
+
+          .icon {
+            width: 17px;
+          }
+
+          .divs {
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+@import "src/common/styles/variables";
+
+.linksBlock {
+  display: flex;
+  justify-content: center;
+
+  .link {
+    margin: 20px;
+    padding: 20px;
+    width: 25%;
+    border: $primaryColor 3px solid;
+    text-decoration: none;
+
+
+  }
+
+  a {
+    color: $secondTextColor;
+    font-size: 25px;
+    text-decoration: none;
+
+
+    &:hover {
+      color: $primaryColor;
+      font-size: 27px
+    }
+  }
+
+}

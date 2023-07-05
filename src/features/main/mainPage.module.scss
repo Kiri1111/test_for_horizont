@@ -1,0 +1,25 @@
+@import "src/common/styles/variables";
+
+.mainBlock {
+
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+
+  .welcome {
+    font-size: 40px;
+    color: $secondTextColor;
+
+  }
+
+  .links {
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+    color: $secondTextColor;
+  }
+}
