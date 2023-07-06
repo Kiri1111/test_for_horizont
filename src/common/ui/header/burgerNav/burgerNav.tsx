@@ -18,7 +18,7 @@ export const BurgerNav = () => {
 
 		<div className={s.burgerNav}>
 			<div className={menuIsOpen ? `${s.burgerNavItems} ${s.show}` : s.burgerNavItems}>
-				<NavLink to={'/'}>
+				<NavLink to={'/test_for_horizont'}>
 					<div>Главная</div>
 				</NavLink>
 				<NavLink to={'/tvs'}>

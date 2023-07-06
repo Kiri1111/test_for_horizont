@@ -13,7 +13,7 @@ function App() {
 		<div className={s.app}>
 			<Header/>
 			<Routes>
-				<Route path={'/'} element={<MainPage/>}/>
+				<Route path={'/test_for_horizont'} element={<MainPage/>}/>
 				<Route path={'/tvs'} element={<TvsList/>}/>
 				<Route path={'/microwaves'} element={<MicrowavesList/>}/>
 				<Route path={'/developed'} element={<DeveloperInfo/>}/>
