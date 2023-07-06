@@ -2,11 +2,12 @@
 
 .headerBlock {
   width: 100%;
-  height: 100px;
+  height: 70px;
   opacity: 70%;
-  background-color: $backGroundSecondColor;
+  background-color: #1f1f21;
   position: fixed;
   color: $primaryColor;
   font-size: 25px;
-  padding: 40px;
+  padding: 30px;
+  z-index: 99;
 }

@@ -4,9 +4,9 @@ import address from '../../images/address.png'
 import gitHubI from '../../images/github.png'
 import linkedinI from '../../images/linkedin.png'
 import telegramI from '../../images/telegram.png'
-import s from './footer.module.scss'
+import s from './developerInfo.module.scss'
 
-export const Footer = () => {
+export const DeveloperInfo = () => {
 	const telIcon = phone
 	const addressIcon = address
 	const gitHubIcon = gitHubI
@@ -15,7 +15,7 @@ export const Footer = () => {
 	return (
 		<div className={s.footerBlock}>
 			<div className={s.footerContainer}>
-				<div className={s.contant}>
+				<div className={s.content}>
 					<h2>developed by Kirill Medvedev</h2>
 					<div className={s.table}>
 						<div className={s.divTel}>

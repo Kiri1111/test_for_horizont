@@ -15,6 +15,7 @@ export const BurgerNav = () => {
 		setMenuIsOpen(!menuIsOpen)
 	}
 	return (
+
 		<div className={s.burgerNav}>
 			<div className={menuIsOpen ? `${s.burgerNavItems} ${s.show}` : s.burgerNavItems}>
 				<NavLink to={'/'}>
@@ -26,11 +27,14 @@ export const BurgerNav = () => {
 				<NavLink to={'/microwaves'}>
 					<div>Печи</div>
 				</NavLink>
-
+				<NavLink to={'/developed'}>
+					<div>Разработал</div>
+				</NavLink>
 
 			</div>
 			<div style={burgerIcon} onClick={onBurgerClick} className={s.burgerBtn}></div>
 		</div>
+
 	);
 };
 

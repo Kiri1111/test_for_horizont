@@ -1,0 +1,63 @@
+@import './src/common/styles/variables';
+
+
+.itemsBlock {
+  width: 80%;
+  background: $backGroundColor;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+
+  .modalChildren {
+    display: flex;
+    align-items: center;
+
+    .imgInModal {
+      width: 570px;
+    }
+
+    .descriptionsInModal {
+      width: 200px;
+      margin: 60px;
+
+    }
+  }
+
+  .content {
+    margin-top: 95px;
+    margin-bottom: 15px;
+    width: 60%;
+    padding: 20px;
+    border: rgba(101, 89, 89, 0.59) solid 2px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .img {
+      width: 250px;
+      cursor: pointer;
+    }
+
+    .title {
+      font-size: 20px;
+      margin: 20px;
+      font-weight: 600;
+
+    }
+
+    .button {
+      border: $primaryColor solid 2px;
+      margin: 20px;
+      padding: 10px;
+      width: 110px;
+      border-radius: 20px;
+      cursor: pointer;
+
+      &:hover {
+        border: black solid 2px;
+        color: $primaryColor;
+      }
+    }
+  }
+}

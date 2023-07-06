@@ -12,7 +12,10 @@ export const Modal: FC<ModalPropsType> = ({title, children, setView}) => {
 	return (
 		<div onClick={closeModalHandler} className={s.modalPage}>
 			<div onClick={e => e.stopPropagation()} className={s.modal}>
-				<h3>{title}</h3>
+				<div className={s.headerModal}>
+					<h3>{title}</h3>
+					<div className={s.close} onClick={closeModalHandler}>Закрыть</div>
+				</div>
 				{children}
 			</div>
 		</div>

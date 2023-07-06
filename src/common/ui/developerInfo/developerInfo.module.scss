@@ -2,19 +2,23 @@
 
 
 .footerBlock {
+  position: absolute;
+  top: 35%;
+  left: 25%;
   display: flex;
   text-align: center;
-  justify-content: end;
+  justify-content: center;
   color: $textColor;
   font-size: 15px;
-  background-color: rgba(60, 60, 60, 0.53);
-  width: 30%;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  height: 30vh;
   border-radius: 20px;
 
   .footerContainer {
 
 
-    .contant {
+    .content {
 
       .table {
         width: 100%;
@@ -30,7 +34,7 @@
           border-radius: 10px;
           background-color: lightgrey;
           width: 20vh;
-          margin: 6px;
+          margin: 26px;
 
           .icon {
             width: 17px;

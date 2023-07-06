@@ -9,10 +9,7 @@ export const Links = () => {
 				<div>Телевизоры</div>
 			</NavLink>
 			<NavLink className={s.link} to={'/microwaves'}>
-				<div>Печи</div>
-			</NavLink>
-			<NavLink className={s.link} to={'/'}>
-				<div>Главная</div>
+				<div>Микроволновые печи</div>
 			</NavLink>
 		</div>
 	)

@@ -17,11 +17,6 @@ const initialState = [
 		photo: 'https://content2.onliner.by/catalog/device/main/2adbeb7f241b77a6c9e73fdf1f3951cb.jpeg',
 		title: 'Телевизор Horizont 24LE5011D',
 		description: '24" 1366x768 (HD), частота матрицы 60 Гц'
-	}, {
-		id: v1(),
-		photo: 'https://content2.onliner.by/catalog/device/main/bcfcc93b8ae6bcd75a305375e31ebe37.jpeg',
-		title: 'Телевизор Horizont 55LE7053D',
-		description: '55" 3840x2160 (4K UHD), матрица VA, частота матрицы 60 Гц, Smart TV (Яндекс.ТВ), Wi-Fi'
 	}
 ]
 

@@ -15,8 +15,6 @@ export const MainPage = () => {
 			<ParticleComponent/>
 			<div className={s.welcome}>Добро пожаловать на презентацию техники HORIZONT</div>
 			<div className={s.links}>Выберите интересующий раздел:<Links/></div>
-
-
 		</div>
 	)
 }
