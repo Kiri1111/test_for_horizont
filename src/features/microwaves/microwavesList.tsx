@@ -9,7 +9,8 @@ export const MicrowavesList = () => {
 
 	return (
 		<div>
-			{microwaves.map(el => <ItemForView key={el.id} description={el.description} title={el.title}
+			{microwaves.map(el => <ItemForView key={el.id} comments={el.comments} id={el.id}
+											   description={el.description} title={el.title}
 											   photo={el.photo}/>)}
 		</div>
 	)

@@ -1,16 +1,29 @@
-import React, {FC, useState} from 'react';
+import React, {ChangeEvent, FC, useState} from 'react';
 import {Modal} from "../modalWindow/Modal";
 import s from './itemForView.module.scss'
+import {useAppDispatch} from "../../../app/hooks";
+import {tvsActions} from "../../../features/tvs/tvsSlice";
 
 type ItemPropsType = {
+	id: string
 	title: string
 	photo: string
 	description: string
+	comments: string[]
 }
 
-export const ItemForView: FC<ItemPropsType> = ({photo, title, description}) => {
+export const ItemForView: FC<ItemPropsType> = ({id, comments, photo, title, description}) => {
 
 	const [viewDescription, setViewDescription] = useState(false)
+	const [comment, setComment] = useState('')
+	const dispatch = useAppDispatch()
+	const commentsForView = comments.map(el => el)
+	const setCommentHandler = (e: ChangeEvent<HTMLInputElement>) => setComment(e.currentTarget.value)
+
+	const addCommentHandler = () => {
+		dispatch(tvsActions.setComment({id, comment}))
+		setComment('')
+	}
 
 	const viewDescriptionsHandler = () => setViewDescription(true)
 
@@ -20,7 +33,13 @@ export const ItemForView: FC<ItemPropsType> = ({photo, title, description}) => {
 			{viewDescription && <Modal title={title} setView={setViewDescription}>
                 <div className={s.modalChildren}>
                     <img className={s.imgInModal} alt={'icon'} src={photo}/>
-                    <div className={s.descriptionsInModal}>{description}</div>
+                    <div className={s.descriptionBlock}>
+                        <div className={s.descriptionsInModal}>{description}</div>
+                        <div className={s.comment}>Комментарии: {commentsForView}</div>
+                        <input className={s.input} placeholder={'Ваш комментарии'} value={comment}
+                               onChange={setCommentHandler}/>
+                        <div className={s.addCommentButton} onClick={addCommentHandler}>Добавить комментарий</div>
+                    </div>
                 </div>
             </Modal>}
 			<div className={s.content}>

@@ -8,7 +8,8 @@ export const TvsList = () => {
 	const tvs = useAppSelector(tvsSelector)
 	return (
 		<div>
-			{tvs.map(el => <ItemForView key={el.id} description={el.description} title={el.title} photo={el.photo}/>)}
+			{tvs.map(el => <ItemForView key={el.id} id={el.id} description={el.description} title={el.title}
+										photo={el.photo} comments={el.comments}/>)}
 		</div>
 	)
 }
